@@ -27,7 +27,7 @@ class Data_cleaning(object):
     def shape(df):
         ''' Pass in DataFrame and get result of rows and columns
         '''
-        return df.shape()
+        return df.shape
 
     def get_feature_names(df):
         '''
