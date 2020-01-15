@@ -16,7 +16,7 @@ Class to help clean data
 import numpy
 import pandas
 
-class Data_cleaning(object):
+class Data_cleaning():
     '''This class will contains methods that can be used
     in order to clean and analyze data
     '''
@@ -24,25 +24,25 @@ class Data_cleaning(object):
     def __init__(self):
         pass
         
-    def shape(df):
+    def shape(self, df):
         ''' Pass in DataFrame and get result of rows and columns
         '''
         return df.shape
 
-    def get_feature_names(df):
+    def get_feature_names(self, df):
         '''
         Pass in Dataframe to retrieve a list
         of columns 
         '''
         return df.columns
 
-    def null_summary(df):
+    def null_summary(self, df):
         '''
         Pass in Dataframe to get list of nulls
         '''
         return df.isnull().sum()
     
-    def search_string(df ,column_name, search_word):
+    def search_string(self, df ,column_name, search_word):
   
         '''Inputs are df, column_name and search_word
         df is the DataFrame you are working with
