@@ -41,3 +41,13 @@ class Data_cleaning(object):
         Pass in Dataframe to get list of nulls
         '''
         return df.isnull().sum()
+    
+    def search_string(df ,column_name, search_word):
+  
+        '''Inputs are df, column_name and search_word
+        df is the DataFrame you are working with
+        column_name is the name of the column as a string
+        search_word is string version of the word
+        you are searching for
+        '''
+        return df[df[column_name].str.contains(search_word)]
